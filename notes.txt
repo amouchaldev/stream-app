@@ -1,0 +1,5 @@
+https://gomovies.sx/
+slider => swiper ( Effect coverflow )
+
+#COLORS:
+blue => #144184

@@ -1,0 +1,184 @@
+:root {
+    --dark-color: #131721;
+    --section-color: #1e2b35;
+    /* use only with background-image propery */
+    --first-color: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    --second-color: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    /* height: 3000px; */
+    background-image: url('../images/Curve\ Line.svg');
+    background-repeat: no-repeat;
+}
+/*  */
+.btn-focus, .btn-primary {
+    background: #3e8afa!important;
+    color: #fff!important;
+    border-color: #3e8afa!important;
+}
+header .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+/*  */
+header {
+    background: #144184 url(../images/header-bg.jpg) top repeat-x;
+}
+header #logo {
+    width: 102px;
+}
+header #search-input {
+    left: 50%;
+    top: 50%;
+}
+header .dropdown-menu {
+    width: 505px;
+}
+header .dropdown-menu .dropdown-item{
+    width: 100px;
+}
+/* header dropdown-menu a {
+    width: 100px;
+} */
+/* trending */
+#trending .dot  {
+    margin-bottom: 2px;
+    height: 5px;
+    width: 5px;
+    /* background: black; */
+    /* display: inline-block; */
+    border-radius: 50%;
+}
+.img-container  {
+    width: 172.854px;
+    height: 259.427px;
+}
+.img-container .overlay, .img-container button {
+    opacity: 0;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+.img-container button {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 43px;
+    width: 46px;
+    
+}
+.img-container:hover > .overlay {
+    opacity: .5;
+}
+.img-container:hover > button {
+    opacity: 1;
+}
+/* coming soon */
+#coming-soon {
+    background-image: url('../images/Curve\ Line.svg');
+    background-repeat: no-repeat;
+}
+
+
+/* footer */
+footer {
+    /* background-color: #000; */
+    background-image: url('../images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom; */
+    /* height: 258px; */
+}
+footer > div {
+    padding-top: 90px;
+}
+/* footer .footer-bg {
+    background-image: url('../images/wave.svg');
+    background-repeat: no-repeat;
+} */
+/* footer .logo {
+    width: 138px;
+} */
+footer .description {
+    font-size: 15px;
+    /* opacity: .8; */
+}
+footer ul {
+    font-size: 13px;
+}
+footer .note {
+    font-size: 12px;
+    /* opacity: .8; */
+}
+/* responsive */
+
+@media only screen and (max-width: 576px) {
+    footer .logo {
+        width: 120px!important;
+    }
+    footer > div {
+        padding-top: 43px;
+    }
+
+    header #search-input {
+        left: 12%;
+        top: 90%;
+    }
+    header h5 {
+        font-size: 34px!important;
+    }
+    header .dropdown-menu {
+        width: 305px;
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 577px) and (max-width : 767px) {
+    /*Big smartphones [426px -> 600px]*/
+    header #search-input {
+        transform: translate(-50%, 201%);
+    }
+    header {
+        background-position: right top; 
+    }
+    .img-container {
+        height: 217.42px;
+    }
+    /* footer {
+        height: 334px;
+    } */
+    footer > div {
+        padding-top: 49px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    header #search-input {
+        transform: translate(-50%, 165%);
+    }
+    header {
+        background-position: top; 
+    }
+    footer > div {
+        padding-top: 54px;
+    }
+    header .dropdown-menu {
+        width: 405px;
+    }
+}
+@media only screen and (min-width: 992px)  {
+    footer > div {
+    padding-top: 68px;
+    }
+    header .dropdown-menu {
+        width: 505px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    .img-container {
+        height: 220.427px;
+    }
+}
