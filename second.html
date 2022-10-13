@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  AOS MASTER -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- media query -->
+    <link rel="stylesheet" href="assets/css/query.css">
+     <!-- splide css -->
+     <link rel="stylesheet" href="assets/css/splide.min.css">
+    <title>Document</title>
+    <style>
+        nav {
+         background-color: var(--first-color);
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/images/logo-light.png" alt="logo" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0 d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown mx-md-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <div class="d-flex flex-wrap">
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mx-md-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <div class="d-flex flex-wrap">
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                            <a class="dropdown-item mb-1" href="#">Action 1</a>
+                        </div>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a class="nav-link" href="#">tv show</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a class="nav-link" href="#">top IMDB</a>
+                </li>  
+            </ul>
+            <form class="d-flex flex-column flex-lg-row my-3 my-lg-0">
+                <div class="input-group me-4">
+                    <span class="input-group-text bg-white border-0" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control border-0" placeholder="Enter Keyword" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none text-light mt-3 mt-lg-0 text-center">    
+                <i class="fa-regular fa-user me-2"></i>Login</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<main class="position-relative">
+    <div id="cover" class="h-100 w-100" style="background-image: url('assets/images/cover.jpg');"></div>
+    <div class="overlay position-absolute w-100 h-100 bg-black opacity-50 top-0 start-0"></div>
+    <a href="#seasonAndEp" class="btn btn-primary position-absolute" id="cover-btn"><i class="fa-solid fa-play fa-2xl"></i></a>
+
+    <!-- info -->
+    <!-- <div class="container"> -->
+        <div class="info bg-white rounded container position-absolute p-4 shadow-sm">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 mb-3 mb-lg-0 ">
+                    <div class="poster">
+                        <img src="assets/images/posters/s-l1600.jpg" alt="poster" class="w-100 h-100 rounded">
+                    </div>
+    
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                        <a href="#seasonAndEp" class="btn btn-primary btn-sm px-3"><i class="fa-solid fa-play m-2"></i>watch now</a>
+                        <a href="#" class="btn btn-light btn-sm px-3 py-2"><i class="fa-solid fa-plus me-2"></i>Add to favorite</a>
+                    </div>
+                    <h2 class="mb-3"><a href="#" class="text-decoration-none text-black">Bullet Train</a></h2>
+                    <div class="mb-3">
+                        <button class="btn btn-outline-dark btn-sm me-2"><i class="fa-solid fa-video me-1"></i> trailler</button>
+                        <button class="btn btn-outline-dark btn-sm fw-bold me-2">HD</button>
+                        <button class="btn btn-outline-warning btn-sm fw-bold">IMDB: <span class="quality">8.5</span></button>
+                    </div>
+                    <p class="mb-3 description">Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, may have other plans, as Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe—all with connected, yet conflicting, objectives—on the world's fastest train.</p>
+                    <div>
+                        <div class="row">
+                            <ul class="list-unstyled col-12 col-lg-6">
+                                <li class="mb-1"><strong>Released:</strong> <span class="text-muted"> 2022</span></li>
+                                <li class="pe-5 mb-1"><strong>Genre:</strong> 
+                                    <a href="#" class="text-decoration-none text-black text-muted">Action</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Drama</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">Comedy</a>,
+                                </li>
+                               
+                            </ul>
+                            <ul class="list-unstyled col-12 col-lg-6">
+                                <li class="mb-1"><strong>Duration:</strong><span class="text-muted"> 129 min</span></li>
+                                <li class="mb-1"><strong>Casts:</strong> 
+                                    <a href="#" class="text-decoration-none text-black text-muted">travis fimmel</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">emelia clarck</a>,
+                                    <a href="#" class="text-decoration-none text-black text-muted">gal gadot</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</main>
+
+
+
+<section id="seasonAndEp" class="container rounded text-light mb-4 p-5 shadow-sm rounded bg-dark">
+        <!-- select season -->
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Season 1</option>
+            <option value="1">Season 2</option>
+            <option value="2">Season 3</option>
+            <option value="3">Season 4</option>
+        </select>
+        <h2 class="my-3">Episodes</h2>
+        <div id="seasonEp">
+            <div class="row">
+                <!-- start movie -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 episode episode-num m-0 p-0" data-aos="fade-up">
+                    <div class="card bg-transparent border-0 position-relative px-1">
+                        <div class="img-container position-relative w-100">
+                            <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
+                            <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
+                            <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>
+                      <div class="card-body p-0 mt-2">
+                        <h4 class="card-title h6 m-0 text-capitalize text-center">Episode 1</h4>
+                      </div>
+                      <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize text-secondary">HD</strong>
+                    </div>
+                </div>
+                <!-- end movie -->
+            </div>
+        </div>
+</section>
+
+
+
+
+<!-- YOU MAY LIKE -->
+<section id="more-section" class="mb-4">
+    <div class="container">
+            <h2 class="mb-3">You may like</h2>
+        <div class="trending-movies">
+            <div class="row episodes">
+                <!-- start movie -->
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 episode m-0 p-0" data-aos="fade-up">
+                    <div class="card border-0 position-relative px-1 bg-transparent">
+                        <div class="img-container position-relative w-100">
+                            <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
+                            <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
+                            <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>
+                      <div class="card-body p-0 mt-2">
+                        <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
+                        <div class="info d-flex justify-content-between text-muted mt-1">
+                            <div class="d-flex align-items-center mt-1">
+                                <small class="text-light">2022</small>
+                                <span class="d-inline-block bg-secondary dot mx-2"></span>
+                                <small class="text-light">105m</small>
+                            </div>
+                            <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
+                        </div>
+                      </div>
+                      <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
+                    </div>
+                </div>
+                <!-- end movie -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="text-light mt-4 pb-4">
+    <!-- <div class="footer-bg position-absolute w-100 h-100 top-0 start-0"></div> -->
+    <div class="container-fluid container-md content">
+        <div class="row text-center text-sm-start">
+            <div class="col-12 col-sm-3 col-lg-2 text-center mb-3 mb-sm-0">
+                <img src="assets/images/logo-light.png" alt="LOGO" class="logo w-100"><br />
+                <small class="opacity-75">&copy; 2022</small>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-8 px-lg-5 mb-3 mb-sm-0">
+                <p class="description opacity-75"><small>GoMovies is a Free Movies streaming site with zero ads. We let you watch movies online without having to register or paying, with over 10000 movies and TV-Series. You can also Download full movies from GoMovies and watch it later if you want</small></p>
+                <ul class="d-flex p-0 list-unstyled flex-column flex-md-row">
+                    <li class="mb-2 mb-md-0"><a href="#" class="text-decoration-none text-light me-md-3 me-lg-4">Terms of service</a></li>
+                    <li class="mb-2 mb-md-0"><a href="#" class="text-decoration-none text-light me-md-3 me-lg-4">Contact</a></li>
+                    <li class="mb-2 mb-md-0"><a href="#" class="text-decoration-none text-light me-md-3 me-lg-4">Join Us</a></li>
+                    <li class="mb-2 mb-md-0"><a href="#" class="text-decoration-none text-light me-md-3 me-lg-4">Donate</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-3 col-lg-2">
+                <p class="border border-warning text-warning p-2 note opacity-75"><small>GoMovies does not store any files on our server, we only linked to the media which is hosted on 3rd party services.</small></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+        const episode = document.querySelector('#seasonEp .episode')
+        const moreSection = document.querySelector('#more-section .row')
+        for (let i = 0; i < 11; i++) {
+            // console.log(episodeClone)
+            const episodeClone = episode.cloneNode(true)
+            moreSection.appendChild(episodeClone)
+        }
+
+        const episodeNum = document.querySelector('.episode-num')
+        const seasonEp = document.querySelector('#seasonEp .row')
+        for (let i = 0; i < 8; i++) {
+            // console.log(episodeClone)
+            const episodeClone = episodeNum.cloneNode(true)
+            seasonEp.appendChild(episodeClone)
+        }
+</script>
+</body>
+</html>

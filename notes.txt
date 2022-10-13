@@ -3,3 +3,6 @@ slider => swiper ( Effect coverflow )
 
 #COLORS:
 blue => #144184
+
+
+rgb(19, 69, 142)

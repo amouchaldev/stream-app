@@ -1,28 +1,49 @@
 :root {
-    --dark-color: #131721;
-    --section-color: #1e2b35;
-    /* use only with background-image propery */
-    --first-color: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    --second-color: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    --first-color: #144184;
+    --second-color: #282b4c;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     /* height: 3000px; */
-    background-image: url('../images/Curve\ Line.svg');
-    background-repeat: no-repeat;
+    /* background-image: url('../images/Curve\ Line.svg');
+    background-repeat: no-repeat; */
 }
-/*  */
+
+
+body {
+    /* background-size: cover; */
+    background: #212342;
+}
+body:after {
+        content: " ";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url('../images/wall.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: -17;
+        opacity: .5;
+    }
+
+
+
 .btn-focus, .btn-primary {
-    background: #3e8afa!important;
+    background: #29b0ef!important;
     color: #fff!important;
-    border-color: #3e8afa!important;
+    border-color: #29b0ef!important;
 }
+
 header .form-control:focus {
     outline: 0;
     box-shadow: none;
 }
-/*  */
 header {
     background: #144184 url(../images/header-bg.jpg) top repeat-x;
 }
@@ -33,23 +54,80 @@ header #search-input {
     left: 50%;
     top: 50%;
 }
-header .dropdown-menu {
+nav {
+    font-size: 15px;
+}
+nav .dropdown-menu {
     width: 505px;
 }
-header .dropdown-menu .dropdown-item{
+nav .dropdown-menu .dropdown-item{
     width: 100px;
 }
-/* header dropdown-menu a {
-    width: 100px;
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+/* coming soon */
+#coming-soon {
+    background-image: url('../images//Curve\ Line.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ---------------- second page ------------------------------------- */
+nav .logo {
+    width: 102px;
+}
+
+
+main {
+    height: 90vh;
+}
+#cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+main #cover-btn {
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    padding: 25px 25px 25px 31px;
+} 
+
+main .info {
+    left: 50%;
+    top: 109%;
+    transform: translate(-50%, -50%);
+   
+}
+
+main .info .description {
+    color: #000000c2;
+}
+
+main .info a.btn {
+    border-radius: 30px;
+}
+/* season and episodes */
+#seasonAndEp {
+    margin-top: 340px;
+    background-image: url('../images/Polygon\ Luminary.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* you may also like */
+/* #more-section {
+    margin-top: 317px!important;
 } */
-/* trending */
-#trending .dot  {
+/* ----------------------------- end page 2 ----------------------------------------------- */
+
+/* episode sections */
+section .dot  {
     margin-bottom: 2px;
     height: 5px;
     width: 5px;
-    /* background: black; */
-    /* display: inline-block; */
     border-radius: 50%;
+    opacity: .4;
 }
 .img-container  {
     width: 172.854px;
@@ -75,110 +153,132 @@ header .dropdown-menu .dropdown-item{
 .img-container:hover > button {
     opacity: 1;
 }
-/* coming soon */
-#coming-soon {
-    background-image: url('../images/Curve\ Line.svg');
-    background-repeat: no-repeat;
+
+
+/* ------------------------------------------------------ third page ------------------------- */
+
+#player {
+    height: 670px;
+}
+#stream-servers {
+    background-color: rgb(40, 43, 76);
+}
+#download-servers ul li {
+    /* background-image: url('../images/Cloudy.svg'); */
+    background-size: cover;
+    background-color: #3e4357;
+}
+.bg-dark-blue {
+  background-color: var(--second-color);  
 }
 
-
+#download-servers button{
+    border-radius: 0px 14px 14px 0px!important;
+}
+#you-might-like .card, section .card{
+    height: 307px;
+    }
+#you-might-like .overlay{
+background-image: url('../images/posters/overlay.png');
+}
+#you-might-like .card h4 {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/* -------------------------------------------------- end third page ----------------------------------------- */
 /* footer */
 footer {
-    /* background-color: #000; */
     background-image: url('../images/wave.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: bottom; */
-    /* height: 258px; */
 }
 footer > div {
     padding-top: 90px;
 }
-/* footer .footer-bg {
-    background-image: url('../images/wave.svg');
-    background-repeat: no-repeat;
-} */
-/* footer .logo {
-    width: 138px;
-} */
+
 footer .description {
     font-size: 15px;
-    /* opacity: .8; */
 }
 footer ul {
     font-size: 13px;
 }
 footer .note {
     font-size: 12px;
-    /* opacity: .8; */
-}
-/* responsive */
-
-@media only screen and (max-width: 576px) {
-    footer .logo {
-        width: 120px!important;
-    }
-    footer > div {
-        padding-top: 43px;
-    }
-
-    header #search-input {
-        left: 12%;
-        top: 90%;
-    }
-    header h5 {
-        font-size: 34px!important;
-    }
-    header .dropdown-menu {
-        width: 305px;
-    }
-}
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width: 577px) and (max-width : 767px) {
-    /*Big smartphones [426px -> 600px]*/
-    header #search-input {
-        transform: translate(-50%, 201%);
-    }
-    header {
-        background-position: right top; 
-    }
-    .img-container {
-        height: 217.42px;
-    }
-    /* footer {
-        height: 334px;
-    } */
-    footer > div {
-        padding-top: 49px;
-    }
-
 }
 
-@media only screen and (min-width: 768px) {
-    header #search-input {
-        transform: translate(-50%, 165%);
-    }
-    header {
-        background-position: top; 
-    }
-    footer > div {
-        padding-top: 54px;
-    }
-    header .dropdown-menu {
-        width: 405px;
-    }
-}
-@media only screen and (min-width: 992px)  {
-    footer > div {
-    padding-top: 68px;
-    }
-    header .dropdown-menu {
-        width: 505px;
-    }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px){
 
-    .img-container {
-        height: 220.427px;
+
+/* swiper js */
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-pagination-bullet-active {
+    /* background: var(--first-color); */
+    background: #fff;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* margin-right: 6px!important; */
+    /* width: 202.25px!important; */
+  }
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  /* reset swiperjs pagination */
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0; 
+    right: auto;
     }
-}
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 23px;
+    }
