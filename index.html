@@ -137,7 +137,7 @@
 </section>
 
 <!-- trending -->
-<section id="trending" class="mb-3">
+<section id="trending" class="mb-5">
     <div class="container">
         <div class="d-flex align-items-center mb-3">
             <h2 class="me-4 text-light">Trending</h2>
@@ -177,7 +177,7 @@
 
 
 <!-- latest movies -->
-<section id="latest-movies" class="mb-3">
+<section id="latest-movies" class="mb-5">
     <div class="container">
         <div class="d-flex justify-content-between mb-3">
             <h2 class="me-4 text-light">Latest Movies</h2>
@@ -185,7 +185,7 @@
         </div>
 
         <div class="latest-movies">
-            <section class="splide" aria-label="Splide Basic HTML Example">
+            <section class="splide splideLatestMovies" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                       <ul class="splide__list">
                           <li class="splide__slide" style="width: 204px;">
@@ -221,79 +221,89 @@
 
 
 <!-- latest tv show -->
-<section id="latest-tv-show">
+<section id="latest-tv-show" class="mb-5">
     <div class="container">
         <div class="d-flex justify-content-between mb-3">
-            <h2 class="me-4 text-light">Latest Tv Show</h2>
-            <a href="#" class="text-decoration-none text-dark">view more <i class="fa-solid fa-circle-chevron-right fa-sm ms-2"></i></a>
+            <h2 class="me-4 text-light">Latet Tv Show</h2>
+            <a href="#" class="text-decoration-none text-light">view more <i class="fa-solid fa-circle-chevron-right fa-sm ms-2"></i></a>
         </div>
-        <div class="trending-movies">
-            <div class="row episodes">
-                <!-- start movie -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 episode m-0 p-0" data-aos="fade-up">
-                    <div class="card border-0 position-relative px-1 bg-transparent">
-                        <div class="img-container position-relative w-100">
-                            <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
-                            <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
-                            <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
-                        </div>
-                      <div class="card-body p-0 mt-2">
-                        <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
-                        <div class="info d-flex justify-content-between text-muted mt-1">
-                            <div class="d-flex align-items-center mt-1">
-                                <small class="text-light">2022</small>
-                                <span class="d-inline-block bg-secondary dot mx-2"></span>
-                                <small class="text-light">105m</small>
-                            </div>
-                            <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
-                        </div>
-                      </div>
-                      <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
-                    </div>
-                </div>
-                <!-- end movie -->
 
-            </div>
+        <div class="latest-movies">
+            <section class="splide splideLatestTvShow" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide" style="width: 204px;">
+                            <div class="card border-0 position-relative px-1 bg-transparent">
+                                <div class="img-container position-relative w-100">
+                                    <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
+                                    <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
+                                    <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
+                                </div>
+                              <div class="card-body p-0 mt-2">
+                                <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
+                                <div class="info d-flex justify-content-between text-muted mt-1">
+                                    <div class="d-flex align-items-center mt-1">
+                                        <small class="text-light">2022</small>
+                                        <span class="d-inline-block bg-secondary dot mx-2"></span>
+                                        <small class="text-light">105m</small>
+                                    </div>
+                                    <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
+                                </div>
+                              </div>
+                              <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
+                            </div>
+                          </li>
+
+                          <!-- <li class="splide__slide">Slide 02</li>
+                          <li class="splide__slide">Slide 03</li> -->
+                      </ul>
+                </div>
+              </section> 
         </div>
     </div>
 </section>
 
 
 <!-- coming soon -->
-<section id="coming-soon">
+<section id="coming-soon" class="mb-3">
     <div class="container">
         <div class="d-flex justify-content-between mb-3">
             <h2 class="me-4 text-light">Coming Soon</h2>
-            <a href="#" class="text-decoration-none text-dark">view more <i class="fa-solid fa-circle-chevron-right fa-sm ms-2"></i></a>
+            <a href="#" class="text-decoration-none text-light">view more <i class="fa-solid fa-circle-chevron-right fa-sm ms-2"></i></a>
         </div>
-        <div class="trending-movies">
-            <div class="row episodes">
-                <!-- start movie -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 episode m-0 p-0" data-aos="fade-up">
-                    <div class="card border-0 position-relative px-1 bg-transparent">
-                        <div class="img-container position-relative w-100">
-                            <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
-                            <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
-                            <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
-                        </div>
-                      <div class="card-body p-0 mt-2">
-                        <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
-                        <div class="info d-flex justify-content-between text-muted mt-1">
-                            <div class="d-flex align-items-center mt-1">
-                                <small class="text-light">2022</small>
-                                <span class="d-inline-block bg-secondary dot mx-2"></span>
-                                <small class="text-light">105m</small>
+
+        <div class="latest-movies">
+            <section class="splide splideComingSoon" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide" style="width: 204px;">
+                            <div class="card border-0 position-relative px-1 bg-transparent">
+                                <div class="img-container position-relative w-100">
+                                    <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
+                                    <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
+                                    <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
+                                </div>
+                              <div class="card-body p-0 mt-2">
+                                <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
+                                <div class="info d-flex justify-content-between text-muted mt-1">
+                                    <div class="d-flex align-items-center mt-1">
+                                        <small class="text-light">2022</small>
+                                        <span class="d-inline-block bg-secondary dot mx-2"></span>
+                                        <small class="text-light">105m</small>
+                                    </div>
+                                    <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
+                                </div>
+                              </div>
+                              <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
                             </div>
-                            <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
-                        </div>
-                      </div>
-                      <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
-                    </div>
+                          </li>
+
+                          <!-- <li class="splide__slide">Slide 02</li>
+                          <li class="splide__slide">Slide 03</li> -->
+                      </ul>
                 </div>
-                <!-- end movie -->   
-            </div>
+              </section> 
         </div>
-        <div class="trending-tv-show"></div>
     </div>
 </section>
     
@@ -347,24 +357,25 @@
             const episodeClone = episodeLi.cloneNode(true)
             moviesContainer.appendChild(episodeClone)
         }
-        // for (let i = 0; i < 14; i++) {
-        //     // console.log(episodeClone)
-        //     const episodeClone = episode.cloneNode(true)
-        //     comingSoonContainer.appendChild(episodeClone)
-        // }
+        for (let i = 0; i < 14; i++) {
+            // console.log(episodeClone)
+            const episodeClone = episodeLi.cloneNode(true)
+            comingSoonContainer.appendChild(episodeClone)
+        }
 
-        // for (let i = 0; i < 14; i++) {
-        //     // console.log(episodeClone)
-        //     const episodeClone = episode.cloneNode(true)
-        //     tvShowContainer.appendChild(episodeClone)
-        // }
+        for (let i = 0; i < 14; i++) {
+            // console.log(episodeClone)
+            const episodeClone = episodeLi.cloneNode(true)
+            tvShowContainer.appendChild(episodeClone)
+        }
 
     </script>
 
 <script src="assets/js/splide.min.js"></script>
 <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
     <script>
-        const splide = new Splide( '.splide', {
+        // latest movies splide
+        const splideLatestMovies = new Splide( '.splideLatestMovies', {
         // type   : 'loop',
         drag   : 'free',
         focus  : 'center',
@@ -376,8 +387,35 @@
             autoStart: true
         },
         } );
-
-        splide.mount( window.splide.Extensions );
+        splideLatestMovies.mount( window.splide.Extensions );
+        // latest tv show splide
+        const splideLatestTvShow = new Splide( '.splideLatestTvShow', {
+        // type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        autoWidth: true,
+        autoHeight: true,
+        perPage: 5,
+        autoScroll: {
+            speed: 0.4,
+            autoStart: true
+        },
+        } );
+        splideLatestTvShow.mount( window.splide.Extensions );
+         // coming soon splide
+         const splideComingSoon = new Splide( '.splideComingSoon', {
+        // type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        autoWidth: true,
+        autoHeight: true,
+        perPage: 5,
+        autoScroll: {
+            speed: 0.4,
+            autoStart: true
+        },
+        } );
+        splideComingSoon.mount( window.splide.Extensions );
       </script>
 </body>
 </html>
