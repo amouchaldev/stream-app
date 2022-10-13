@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/query.css">
      <!-- splide css -->
      <link rel="stylesheet" href="assets/css/splide.min.css">
-    <title>Document</title>
+    <title>SECOND</title>
     <style>
         nav {
          background-color: var(--first-color);
@@ -30,7 +30,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/images/logo-light.png" alt="logo" class="logo"></a>
+          <a class="navbar-brand" href="/"><img src="assets/images/logo-light.png" alt="logo" class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -169,11 +169,11 @@
 
 <section id="seasonAndEp" class="container rounded text-light mb-4 p-5 shadow-sm rounded bg-dark">
         <!-- select season -->
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Season 1</option>
-            <option value="1">Season 2</option>
-            <option value="2">Season 3</option>
-            <option value="3">Season 4</option>
+        <select class="form-select" aria-label="Default select example" id="seasons">
+            <option value="1" selected>Season 1</option>
+            <option value="2">Season 2</option>
+            <option value="3">Season 3</option>
+            <option value="4">Season 4</option>
         </select>
         <h2 class="my-3">Episodes</h2>
         <div id="seasonEp">
@@ -201,38 +201,18 @@
 
 
 <!-- YOU MAY LIKE -->
-<section id="more-section" class="mb-4">
-    <div class="container">
-            <h2 class="mb-3">You may like</h2>
-        <div class="trending-movies">
-            <div class="row episodes">
-                <!-- start movie -->
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4 episode m-0 p-0" data-aos="fade-up">
-                    <div class="card border-0 position-relative px-1 bg-transparent">
-                        <div class="img-container position-relative w-100">
-                            <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
-                            <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
-                            <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
-                        </div>
-                      <div class="card-body p-0 mt-2">
-                        <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
-                        <div class="info d-flex justify-content-between text-muted mt-1">
-                            <div class="d-flex align-items-center mt-1">
-                                <small class="text-light">2022</small>
-                                <span class="d-inline-block bg-secondary dot mx-2"></span>
-                                <small class="text-light">105m</small>
-                            </div>
-                            <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
-                        </div>
-                      </div>
-                      <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
-                    </div>
-                </div>
-                <!-- end movie -->
-            </div>
+<section class=" container" id="you-might-like">
+    <h3 class="my-3 text-light">You may like</h3>
+    <section class="splide you-may-like"  aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                <!--  -->
+              </ul>
         </div>
-    </div>
+     
+      </section>
 </section>
+
 
 <!-- footer -->
 <footer class="text-light mt-4 pb-4">
@@ -266,13 +246,41 @@
 <script>AOS.init();</script>
 <!-- bootstrap js -->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/splide.min.js"></script>
+<script src="assets/js/splide-extension-auto-scroll.min.js"></script>
 <script>
+
+        const doc = document
+        const seasons = doc.querySelector('#seasonAndEp select')
+        seasons.addEventListener('change', () => {
+            console.log(seasons.value)
+        })
+    //  console.log(seasons)
         const episode = document.querySelector('#seasonEp .episode')
-        const moreSection = document.querySelector('#more-section .row')
+        const moreSection = document.querySelector('#you-might-like ul.splide__list')
         for (let i = 0; i < 11; i++) {
             // console.log(episodeClone)
-            const episodeClone = episode.cloneNode(true)
-            moreSection.appendChild(episodeClone)
+            moreSection.innerHTML += `<li class="splide__slide" style="width: 204px;">
+                            <div class="card border-0 position-relative px-1 bg-transparent">
+                                <div class="img-container position-relative w-100">
+                                    <img class="card-img-top rounded position-absolute w-100 h-100" src="assets/images/posters/s-l1600.jpg" alt="Title">
+                                    <div class="overlay bg-dark position-absolute w-100 h-100 top-0 start-0 rounded"></div>
+                                    <button class="btn btn-primary position-absolute" style="transform: transalte(-50%, -50%);"><i class="fa-solid fa-circle-play"></i></button>
+                                </div>
+                              <div class="card-body p-0 mt-2">
+                                <h4 class="card-title h6 m-0 text-capitalize text-light">Train bullet</h4>
+                                <div class="info d-flex justify-content-between text-muted mt-1">
+                                    <div class="d-flex align-items-center mt-1">
+                                        <small class="text-light">2022</small>
+                                        <span class="d-inline-block bg-secondary dot mx-2"></span>
+                                        <small class="text-light">105m</small>
+                                    </div>
+                                    <small class="border rounded text-light" style="padding: 1px 3px;">Movie</small>
+                                </div>
+                              </div>
+                              <strong class="quality position-absolute bg-white p-1 rounded end-0 top-0 m-2 text-capitalize">HD</strong>
+                            </div>
+                          </li>`
         }
 
         const episodeNum = document.querySelector('.episode-num')
@@ -282,6 +290,25 @@
             const episodeClone = episodeNum.cloneNode(true)
             seasonEp.appendChild(episodeClone)
         }
+
+        // 
+
+
+
+        const youMayLike = new Splide( '.you-may-like', {
+        // type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        autoWidth: true,
+        autoHeight: true,
+        perPage: 5,
+        autoScroll: {
+            speed: 0.2,
+            autoStart: true
+        },
+        } );
+        youMayLike.mount( window.splide.Extensions );
 </script>
+
 </body>
 </html>

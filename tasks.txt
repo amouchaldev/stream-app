@@ -1,5 +1,7 @@
 movie information 
 stream page
 
-
-
+TOGGLE TRENDING
+TOGGLE SEASONS 
+LOGGIN PAGE
+DATABASE
